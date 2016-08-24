@@ -1,7 +1,7 @@
 Extract an Image's dominant color - Kirby CMS Panel
 ===========================
 
-![Screenshot](https://github.com/iandoe/kirby-dominant-color/raw/master/preview.png)
+![Screenshot](https://github.com/iandoe/kirby-dominant-color/raw/master/preview.jpg)
 
 Simple kirby panel hook that will extract the most dominant color for a given image and store it in the file's metadata on the `color` field as an hex value eg: `#fefefe`.
 
