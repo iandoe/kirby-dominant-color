@@ -42,3 +42,12 @@ The value will be available on the `image` object like such :
 ```
 <?php $page->image('myimage.jpg')->color() ?>
 ```
+
+## License
+
+MIT
+
+## Credits
+
+All credits goes to @thephpleague for the actual color extracting process in PHP
+https://github.com/thephpleague/color-extractor
