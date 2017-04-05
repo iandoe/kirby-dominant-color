@@ -8,8 +8,11 @@ use League\ColorExtractor\Palette;
 
 kirby()->hook(['panel.file.upload', 'panel.file.replace'], function($image) {
   if ($image->type() == 'image') {
-		// Create thumb for faster processing
-		$thumb = $image->resize(400);
+    // Create thumb for faster processing
+    $thumb = $image->thumb([
+      'width'   => 400,
+      'imagekit.lazy' => false
+    ]);
 
 		// Extract main color
 		$palette = Palette::fromFilename($thumb->root());
