@@ -11,7 +11,8 @@ kirby()->hook(['panel.file.upload', 'panel.file.replace'], function($image) {
     // Create thumb for faster processing
     $thumb = $image->thumb([
       'width'   => 400,
-      'imagekit.lazy' => false
+      'imagekit.lazy' => false,
+      'imagekit.optimize' => false
     ]);
 
 		// Extract main color
